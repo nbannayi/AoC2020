@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "W+aijG/ZrzxGfUWzxqRVRJhAJlP4pwSSNUQ+GQNp35cTUx50MeDRg896MtsbQFDJzEAv8oYbg3zW+N9aurak8w==",
+  "success": true,
+  "projectFilePath": "/Users/Nick/development/workspace/AoC2020/Day1/Day1.fsproj",
+  "expectedPackageFiles": [
+    "/Users/Nick/.nuget/packages/fsharp.core/4.5.2/fsharp.core.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

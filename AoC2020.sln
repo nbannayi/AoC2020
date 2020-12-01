@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{82F63EF4-7695-41EE-998A-F7C55FA204B0}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day1", "Day1\Day1.fsproj", "{4DB1292B-79FA-45F3-B4B3-D60C75D2319A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Utilities", "Utilities\Utilities.fsproj", "{F5744139-11A0-4545-863A-377487B42B9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8034DB97-DF53-49EC-A3E7-E8CC7646683D}"
+	ProjectSection(SolutionItems) = preProject
+		InputFiles\Day1Input.txt = InputFiles\Day1Input.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DB1292B-79FA-45F3-B4B3-D60C75D2319A}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{4DB1292B-79FA-45F3-B4B3-D60C75D2319A}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{4DB1292B-79FA-45F3-B4B3-D60C75D2319A}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{4DB1292B-79FA-45F3-B4B3-D60C75D2319A}.Release|anycpu.Build.0 = Release|Any CPU
+		{F5744139-11A0-4545-863A-377487B42B9B}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{F5744139-11A0-4545-863A-377487B42B9B}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{F5744139-11A0-4545-863A-377487B42B9B}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{F5744139-11A0-4545-863A-377487B42B9B}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5744139-11A0-4545-863A-377487B42B9B} = {82F63EF4-7695-41EE-998A-F7C55FA204B0}
+	EndGlobalSection
+EndGlobal
