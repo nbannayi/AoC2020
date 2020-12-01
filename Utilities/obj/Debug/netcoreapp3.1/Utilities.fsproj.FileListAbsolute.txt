@@ -1,6 +1,0 @@
-/Users/Nick/development/workspace/AoC2020/Utilities/bin/Debug/netcoreapp3.1/Utilities.deps.json
-/Users/Nick/development/workspace/AoC2020/Utilities/bin/Debug/netcoreapp3.1/Utilities.dll
-/Users/Nick/development/workspace/AoC2020/Utilities/bin/Debug/netcoreapp3.1/Utilities.pdb
-/Users/Nick/development/workspace/AoC2020/Utilities/obj/Debug/netcoreapp3.1/Utilities.fsprojAssemblyReference.cache
-/Users/Nick/development/workspace/AoC2020/Utilities/obj/Debug/netcoreapp3.1/Utilities.dll
-/Users/Nick/development/workspace/AoC2020/Utilities/obj/Debug/netcoreapp3.1/Utilities.pdb
