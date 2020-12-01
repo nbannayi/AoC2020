@@ -2,6 +2,6 @@
 bin
 obj
 packages
-.DS_Store
-*.FileListAbsolute.txt
-*.dll
+**/.DS_Store
+**/FileListAbsolute
+**/dll
