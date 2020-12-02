@@ -4,14 +4,10 @@
 
 [<EntryPoint>]
 let main argv =
-
-    // Get puzzle input.
+    
     let input = "InputFiles/Day1Input.txt" |> Seq.ofFile
-
-    // Get all expenses into an array of int.
     let expenses = input |> Seq.map (int) |> Array.ofSeq
-
-    // Create list of all expenses pairs.
+    
     let e1, e2 =
         [for i in 0..expenses.Length-1 do
             for j in 0..expenses.Length-1 -> if i <> j then (i,j) else (-1,-1)]
@@ -19,8 +15,7 @@ let main argv =
         |> List.head
 
     printf "Part 1: result is %d\n" (expenses.[e1] * expenses.[e2]) 
-
-    // Create list of all expenses pairs.
+   
     let e1, e2, e3 =
         [for i in 0..expenses.Length-1 do
             for j in 0..expenses.Length-1 do
@@ -29,5 +24,4 @@ let main argv =
         |> List.head
 
     printf "Part 2: result is %d\n" (expenses.[e1] * expenses.[e2] * expenses.[e3]) 
-
     0 
