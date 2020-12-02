@@ -10,7 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8034DB97-DF53-49EC-A3E7-E8CC7646683D}"
 	ProjectSection(SolutionItems) = preProject
 		InputFiles\Day1Input.txt = InputFiles\Day1Input.txt
+		InputFiles\Day2Input.txt = InputFiles\Day2Input.txt
 	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day2", "Day2\Day2.fsproj", "{C4837EFF-5933-4627-A1E2-F3EE965CA613}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +29,10 @@ Global
 		{F5744139-11A0-4545-863A-377487B42B9B}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{F5744139-11A0-4545-863A-377487B42B9B}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{F5744139-11A0-4545-863A-377487B42B9B}.Release|anycpu.Build.0 = Release|Any CPU
+		{C4837EFF-5933-4627-A1E2-F3EE965CA613}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{C4837EFF-5933-4627-A1E2-F3EE965CA613}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{C4837EFF-5933-4627-A1E2-F3EE965CA613}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{C4837EFF-5933-4627-A1E2-F3EE965CA613}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5744139-11A0-4545-863A-377487B42B9B} = {82F63EF4-7695-41EE-998A-F7C55FA204B0}
