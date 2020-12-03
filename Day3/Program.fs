@@ -7,7 +7,7 @@ open System
 [<EntryPoint>]
 let main argv =
 
-    // Create whole forest based on pizzline input 323 long x 31 wide.
+    // Create whole forest based on puzzle input 323 long x 31 wide.
     let makeForest x y =
         let totalWidthRequired = Math.Ceiling(323. * (double x) / (double y)) |> int
         let widthRequired = Math.Ceiling((double totalWidthRequired) / 31.) |> int
