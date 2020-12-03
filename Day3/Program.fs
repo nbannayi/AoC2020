@@ -17,18 +17,16 @@ let main argv =
         |> Array.ofSeq
         |> Array.map (fun l -> [|for _ in 1..widthRequired -> l|] |> Array.reduce (+))
 
-    let countTrees x y : int16 =    
+    let countTrees x y : int64 =    
         let forest = makeForest x y
         let forestWidth = forest.[0].Length
 
-        let xs = [for i in [|0..x..forestWidth-1|] -> i]
-        let ys = [for j in [|0..y..forest.Length-1|] -> j]
-
-        Seq.zip xs ys
+        Seq.zip [for i in [|0..x..forestWidth-1|] -> i] 
+                [for j in [|0..y..forest.Length-1|] -> j]
         |> Seq.map (fun (x,y) -> forest.[y].[x])
         |> Seq.filter (fun p -> p = '#')
         |> Seq.length  
-        |> int16
+        |> int64
 
     printf "Part 1: result is %d\n" (countTrees 3 1)
 
@@ -36,7 +34,6 @@ let main argv =
         [|(1,1);(3,1);(5,1);(7,1);(1,2)|] 
         |> Array.map (fun (x,y) -> countTrees x y) 
         |> Array.reduce (*) 
-        |> int16
 
     printf "Part 2: result is %d\n" totalTrees
     0
