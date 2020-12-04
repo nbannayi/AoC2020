@@ -13,7 +13,7 @@ let main argv =
         let widthRequired = Math.Ceiling((double totalWidthRequired) / 31.) |> int
 
         "InputFiles/Day3Input.txt" 
-        |> Seq.ofFile
+        |> Seq.ofFileLines
         |> Array.ofSeq
         |> Array.map (fun l -> [|for _ in 1..widthRequired -> l|] |> Array.reduce (+))
 

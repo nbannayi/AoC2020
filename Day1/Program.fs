@@ -5,7 +5,7 @@
 [<EntryPoint>]
 let main argv =
     
-    let input = "InputFiles/Day1Input.txt" |> Seq.ofFile
+    let input = "InputFiles/Day1Input.txt" |> Seq.ofFileLines
     let expenses = input |> Seq.map (int) |> Array.ofSeq
     
     let e1, e2 =
