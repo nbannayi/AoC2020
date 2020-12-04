@@ -25,28 +25,23 @@ let main argv =
                 | "in" -> value >= 59 && value <= 76
                 | "cm" -> value >= 150 && value <= 193
                 | _ -> false
-            else
-                false   
-        
-        (byr >= 1920 && byr <= 2002) &&
-        (iyr >= 2010 && iyr <= 2020) &&
-        (eyr >= 2020 && eyr <= 2030) &&
+            else 
+                false                
+
+        (byr >= 1920 && byr <= 2002) && (iyr >= 2010 && iyr <= 2020) && (eyr >= 2020 && eyr <= 2030) && 
         (checkHeight hgt) &&
         Regex.IsMatch(passport.["hcl"], "^#([0-9]|[a-f]){6}$") &&
-        [|"amb";"blu";"brn";"gry";"grn";"hzl";"oth"|] |> Array.contains passport.["ecl"] &&
-        Regex.IsMatch(passport.["pid"], "^[0-9]{9}$")
-        
-    let validatePassportFields (passport : Map<string, string>) : bool = 
-        let completeness = validatePassportComplete passport
+        Regex.IsMatch(passport.["pid"], "^[0-9]{9}$") &&
+        [|"amb";"blu";"brn";"gry";"grn";"hzl";"oth"|] |> Array.contains passport.["ecl"]
 
-        match completeness with
+    let validatePassportFields (passport : Map<string, string>) : bool = 
+        match (validatePassportComplete passport) with
         | false -> false
         | true -> (checkFields passport)
         
     let parsePassportBlock (passportBlock : string) =  
         passportBlock.Trim().Replace(" ", ",").Replace("\n",",").Split(',')
-        |> Array.map (fun p -> let tokens = p.Split(':')
-                               (tokens.[0], tokens.[1]))
+        |> Array.map (fun p -> (p.Split(':').[0], p.Split(':').[1]))                               
         |> Map.ofArray
 
     let passports = 
@@ -60,9 +55,6 @@ let main argv =
         |> Seq.filter (fun p -> p = true)
         |> Seq.length
 
-    let checkPassport = validatePassportComplete
-    printf "Part 1: result is %d\n" (validPassportCount checkPassport)
-
-    let checkPassport = validatePassportFields
-    printf "Part 2: result is %d\n" (validPassportCount checkPassport)
+    printf "Part 1: result is %d\n" (validPassportCount validatePassportComplete)    
+    printf "Part 2: result is %d\n" (validPassportCount validatePassportFields)
     0
