@@ -8,31 +8,17 @@ let main argv =
 
     let validatePassportComplete (passport : Map<string, string>) : bool = 
         [|"byr";"iyr";"eyr";"hgt";"hcl";"ecl";"pid"|]
-        |> Array.map (fun k -> (passport |> Map.containsKey k))
+        |> Array.map (fun k -> passport.ContainsKey k)
         |> Array.reduce (&&)
-    
-    let checkFields (passport : Map<string, string>) : bool = 
-        let byr = int passport.["byr"]
-        let iyr = int passport.["iyr"]
-        let eyr = int passport.["eyr"]
-        let hgt = passport.["hgt"]
 
-        let checkHeight (height : string) : bool =
-            if height.Length >= 4 && height.Length <= 5 then
-                let unit = height.[(height.Length-2)..]
-                let value = int height.[..(height.Length-3)]
-                match unit with
-                | "in" -> value >= 59 && value <= 76
-                | "cm" -> value >= 150 && value <= 193
-                | _ -> false
-            else 
-                false                
-
-        (byr >= 1920 && byr <= 2002) && (iyr >= 2010 && iyr <= 2020) && (eyr >= 2020 && eyr <= 2030) && 
-        (checkHeight hgt) &&
+    let checkFields (passport : Map<string, string>) : bool =
+        Regex.IsMatch(passport.["byr"], "^19[2-9][0-9]|200[0-2]$") &&
+        Regex.IsMatch(passport.["iyr"], "^201[0-9]|2020$") &&
+        Regex.IsMatch(passport.["eyr"], "^202[0-9]|2030$") &&
+        Regex.IsMatch(passport.["hgt"], "^(59|6[0-9]|7[0-6])in|(1[5-8][0-9]|19[0-3])cm$") &&
         Regex.IsMatch(passport.["hcl"], "^#([0-9]|[a-f]){6}$") &&
-        Regex.IsMatch(passport.["pid"], "^[0-9]{9}$") &&
-        [|"amb";"blu";"brn";"gry";"grn";"hzl";"oth"|] |> Array.contains passport.["ecl"]
+        Regex.IsMatch(passport.["ecl"], "^amb|blu|brn|gry|grn|hzl|oth$") &&
+        Regex.IsMatch(passport.["pid"], "^[0-9]{9}$")
 
     let validatePassportFields (passport : Map<string, string>) : bool = 
         match (validatePassportComplete passport) with
