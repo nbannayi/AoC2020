@@ -8,8 +8,8 @@ let main argv =
     let forms = 
         "InputFiles/Day6Input.txt"
         |> Seq.ofFileChunks "\n\n"
-                
-    let totalNoDictinctAnswers =
+
+    let totalNoDistinctAnswers =
         forms
         |> Seq.map (fun f -> f.Replace("\n",""))
         |> Seq.map (set)
@@ -22,7 +22,7 @@ let main argv =
         |> Seq.map (Set.intersectMany)
         |> Seq.map (Set.count)
         |> Seq.sum
-    
-    printf "Part 1: result is %d\n" totalNoDictinctAnswers    
+
+    printf "Part 1: result is %d\n" totalNoDistinctAnswers    
     printf "Part 2: result is %d\n" totalNoSharedAnswers    
     0
