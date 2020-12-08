@@ -71,11 +71,8 @@ module Computer =
             accumulator <- 0
             instructionPointer <- 0
             addressesProcessed <- [||]
-                        
-        /// Step through current instruction.
-        /// Returns:  0 for successful operation.
-        ///          -1 exceeded memory space
-        ///          -2 halted due to infinte loop
+
+        /// Step through current instruction returning status.
         member __.Step() =
 
             // Exceeded availble memory, or stuck in a loop - exit.
