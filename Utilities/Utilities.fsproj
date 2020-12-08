@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Include="Seq.fs" />
+    <Compile Include="Computer.fs" />
   </ItemGroup>
 
 </Project>

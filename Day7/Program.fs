@@ -39,6 +39,7 @@ let main argv =
         let findBags (bagsToSearch : Bag array) (bagToFind : Bag) : Bag array =
             bagsToSearch
             |> Array.filter (fun b -> b.ContainsBag(bagToFind))
+
         bagsToFind
         |> Array.collect (fun bf -> findBags bagsToSearch bf)
         |> Array.map (fun bf -> { Colour = bf.Colour; ContainedBags = [||] })
@@ -52,7 +53,6 @@ let main argv =
                                     | None -> [||])
 
     let rec getAllBags (bagsToSearch : Bag array) (bagsToFind : Bag seq) (mode : string) : Bag seq =
-
         let bagFunction = if mode = "inner" then getInnerBags bagsToSearch else getOuterBags bagsToSearch
 
         seq {
