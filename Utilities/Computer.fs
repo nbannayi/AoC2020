@@ -39,7 +39,6 @@ module Computer =
         let mutable accumulator = 0
         let mutable instructionPointer = 0
         let mutable addressesProcessed = [||]
-        let mutable mode = Halt
 
         /// Get current memory address being processed.
         member __.InstructionPointer
@@ -83,7 +82,7 @@ module Computer =
                  |> Array.filter (fun a -> snd a > 1)
                  |> Array.length > 1) then
                 Halt
-            else            
+            else // Success!!            
                 match memory.[instructionPointer] with
                 | Nop(offset) -> instructionPointer <- instructionPointer + 1
                 | Acc(offset) -> accumulator <- accumulator + offset
