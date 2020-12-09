@@ -10,7 +10,7 @@ module Computer =
         | Acc of offset : int
         | Jmp of offset : int
 
-    /// Oprating modes.
+    /// Status modes after step.
     type Status =
         | Halt
         | MemoryExceed
