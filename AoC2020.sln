@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{82F63EF4-7695-41EE-998A-F7C55FA204B0}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day1", "Day1\Day1.fsproj", "{4DB1292B-79FA-45F3-B4B3-D60C75D2319A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day01", "Day1\Day01.fsproj", "{4DB1292B-79FA-45F3-B4B3-D60C75D2319A}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Utilities", "Utilities\Utilities.fsproj", "{F5744139-11A0-4545-863A-377487B42B9B}"
 EndProject
@@ -21,23 +21,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		InputFiles\Day8ExampleInput.txt = InputFiles\Day8ExampleInput.txt
 		InputFiles\Day9ExampleInput.txt = InputFiles\Day9ExampleInput.txt
 		InputFiles\Day9Input.txt = InputFiles\Day9Input.txt
+		InputFiles\Day10Input.txt = InputFiles\Day10Input.txt
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day2", "Day2\Day2.fsproj", "{C4837EFF-5933-4627-A1E2-F3EE965CA613}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day02", "Day2\Day02.fsproj", "{C4837EFF-5933-4627-A1E2-F3EE965CA613}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day3", "Day3\Day3.fsproj", "{0C2CB88E-2E59-42BE-B630-6CF892ABAE2A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day03", "Day3\Day03.fsproj", "{0C2CB88E-2E59-42BE-B630-6CF892ABAE2A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day4", "Day4\Day4.fsproj", "{243A59ED-D555-4DDF-9846-508ADDAB0C52}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day04", "Day4\Day04.fsproj", "{243A59ED-D555-4DDF-9846-508ADDAB0C52}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day5", "Day5\Day5.fsproj", "{025BE963-6C0F-4187-9151-2E5F3A935A55}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day05", "Day5\Day05.fsproj", "{025BE963-6C0F-4187-9151-2E5F3A935A55}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day6", "Day6\Day6.fsproj", "{00F5A85F-5091-4F62-A8B3-11EE379ADDF3}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day06", "Day6\Day06.fsproj", "{00F5A85F-5091-4F62-A8B3-11EE379ADDF3}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day7", "Day7\Day7.fsproj", "{29728BA4-C8DD-49B0-8FB4-B6DE46037E3E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day07", "Day7\Day07.fsproj", "{29728BA4-C8DD-49B0-8FB4-B6DE46037E3E}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day8", "Day8\Day8.fsproj", "{6DF326D2-5D40-4283-B3E8-8FB0FEFB5F4B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day08", "Day8\Day08.fsproj", "{6DF326D2-5D40-4283-B3E8-8FB0FEFB5F4B}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day9", "Day9\Day9.fsproj", "{D9791587-8C10-4BAF-A4EB-52B794C00016}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day09", "Day9\Day09.fsproj", "{D9791587-8C10-4BAF-A4EB-52B794C00016}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day10", "Day10\Day10.fsproj", "{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +88,10 @@ Global
 		{D9791587-8C10-4BAF-A4EB-52B794C00016}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{D9791587-8C10-4BAF-A4EB-52B794C00016}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{D9791587-8C10-4BAF-A4EB-52B794C00016}.Release|anycpu.Build.0 = Release|Any CPU
+		{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5744139-11A0-4545-863A-377487B42B9B} = {82F63EF4-7695-41EE-998A-F7C55FA204B0}
