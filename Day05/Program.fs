@@ -6,7 +6,7 @@
 let main argv =
 
     let seatCodes =
-        "InputFiles/Day5Input.txt" 
+        "InputFiles/Day05Input.txt" 
         |> Seq.ofFileLines
         
     let getSeatRow (seatCode : string) : int =

@@ -31,7 +31,7 @@ let main argv =
         |> Map.ofArray
 
     let passports = 
-        "InputFiles/Day4Input.txt"
+        "InputFiles/Day04Input.txt"
         |> Seq.ofFileChunks "\n\n"
         |> Seq.map (parsePassportBlock)
         

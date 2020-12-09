@@ -6,7 +6,7 @@
 let main argv =
 
     let xmas =
-        "InputFiles/Day9Input.txt" 
+        "InputFiles/Day09Input.txt" 
         |> Seq.ofFileLines
         |> Seq.map (int64)
         |> Array.ofSeq

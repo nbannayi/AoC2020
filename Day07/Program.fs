@@ -30,7 +30,7 @@ let main argv =
         { Colour = colour; ContainedBags = bagContentsRules }
 
     let bagsToSearch =
-        "InputFiles/Day7Input.txt" 
+        "InputFiles/Day07Input.txt" 
         |> Seq.ofFileLines
         |> Seq.map (processBagRule)
         |> Array.ofSeq

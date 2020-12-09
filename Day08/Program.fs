@@ -5,7 +5,7 @@
 [<EntryPoint>]
 let main argv =
 
-    let computer = Computer(program = "InputFiles/Day8Input.txt")
+    let computer = Computer(program = "InputFiles/Day08Input.txt")
     
     let rec runProgram mode =
         seq {                        

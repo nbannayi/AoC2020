@@ -6,7 +6,7 @@
 let main argv =
 
     let forms = 
-        "InputFiles/Day6Input.txt"
+        "InputFiles/Day06Input.txt"
         |> Seq.ofFileChunks "\n\n"
 
     let totalNoDistinctAnswers =

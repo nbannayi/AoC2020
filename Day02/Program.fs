@@ -6,7 +6,7 @@
 let main argv =
    
     let inputPasswordLines = 
-        "InputFiles/Day2Input.txt" 
+        "InputFiles/Day02Input.txt" 
         |> Seq.ofFileLines 
         |> Seq.map (fun s -> let tokens = s.Split(':') 
                              (tokens.[0].Trim(), tokens.[1].Trim()))
