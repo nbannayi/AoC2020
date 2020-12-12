@@ -42,6 +42,6 @@ let main argv =
         |> Seq.map (fun s -> getSeatUniqueId s)
         |> Seq.max
 
-    printf "Part 1: result is %d\n" maxUniqueSeatId 
-    printf "Part 2: result is %A\n" (getMissingSeat seatCodes)
+    printfn "Part 1: result is %d" maxUniqueSeatId 
+    printfn "Part 2: result is %d" (getMissingSeat seatCodes)
     0

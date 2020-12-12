@@ -48,19 +48,17 @@ module Ferry =
 
         /// Show ASCII display of seating area.
         member this.display =
-
             Console.SetCursorPosition(0, 0)
-
             this.Seats 
             |> Array.iter (fun aisle -> 
                 aisle |> Seq.iter (fun c ->
                     if c = 'L' then                        
-                        Console.ForegroundColor <- ConsoleColor.DarkRed
+                        Console.BackgroundColor <- ConsoleColor.Blue
                     elif c = '#' then
-                        Console.ForegroundColor <- ConsoleColor.Red          
+                        Console.BackgroundColor <- ConsoleColor.DarkBlue       
                     elif c = '.' then
-                        Console.ForegroundColor <- ConsoleColor.Yellow
-                    printf ".") 
+                        Console.BackgroundColor <- ConsoleColor.DarkCyan
+                    printf " ") 
                 printf "\n")
 
         /// Count adjacent occupied seats in 8 directions from passed location.
@@ -109,7 +107,6 @@ module Ferry =
 
         /// Update all seats based on rules and return an updated Ferry.
         member this.updateSeats =
-
             let seats = 
                 seq { for row in 0..this.SeatingAreaHeight-1 do
                         for col in 0..this.SeatingAreaWidth-1 -> this.updateSeat row col}

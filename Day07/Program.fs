@@ -66,6 +66,6 @@ let main argv =
     let outerBagCount = getAllBags bagsToSearch bagsToFind "outer" |> set |> Set.count
     let innerBagCount = getAllBags bagsToSearch bagsToFind "inner" |> Seq.length
 
-    printf "Part 1: result is %d\n" outerBagCount
-    printf "Part 2: result is %d\n" innerBagCount    
+    printfn "Part 1: result is %d" outerBagCount
+    printfn "Part 2: result is %d" innerBagCount    
     0

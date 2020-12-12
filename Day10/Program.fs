@@ -28,7 +28,7 @@ let main argv =
         |> Array.map (fun j -> (snd j) |> Array.length)
         |> Array.reduce (*)
 
-    printf "Part 1: result is %d\n" joltsProduct
+    printfn "Part 1: result is %d" joltsProduct
 
     let findPossibleAdapters (jolts : int64 array) : int64 =
 
@@ -58,5 +58,5 @@ let main argv =
                                | _ -> 1L)
         |> Array.reduce (*)
 
-    printf "Part 2: result is %d\n" (findPossibleAdapters adapterJolts)
+    printfn "Part 2: result is %d" (findPossibleAdapters adapterJolts)
     0

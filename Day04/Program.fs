@@ -41,6 +41,6 @@ let main argv =
         |> Seq.filter (fun p -> p = true)
         |> Seq.length
 
-    printf "Part 1: result is %d\n" (validPassportCount validatePassportComplete)    
-    printf "Part 2: result is %d\n" (validPassportCount validatePassportFields)
+    printfn "Part 1: result is %d" (validPassportCount validatePassportComplete)    
+    printfn "Part 2: result is %d" (validPassportCount validatePassportFields)
     0

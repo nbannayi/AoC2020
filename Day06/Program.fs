@@ -23,6 +23,6 @@ let main argv =
         |> Seq.map (Set.count)
         |> Seq.sum
 
-    printf "Part 1: result is %d\n" totalNoDistinctAnswers    
-    printf "Part 2: result is %d\n" totalNoSharedAnswers    
+    printfn "Part 1: result is %d" totalNoDistinctAnswers    
+    printfn "Part 2: result is %d" totalNoSharedAnswers    
     0

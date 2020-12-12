@@ -39,7 +39,7 @@ let main argv =
         |> Array.find (fun w -> (snd w) = false)
         |> fst
 
-    printf "Part 1: result is %d\n" result
+    printfn "Part 1: result is %d" result
 
     // Work out the point where the sum is exceeded.
     let maxRange = 
@@ -80,5 +80,5 @@ let main argv =
         |> Array.map (processWindow)
         |> Array.sum
 
-    printf "Part 2: result is %d\n" result2
+    printfn "Part 2: result is %d" result2
     0

@@ -27,7 +27,7 @@ let main argv =
 
     let result = tryProgram None Halt
 
-    printf "Part 1: result is %d\n" result
+    printfn "Part 1: result is %d" result
     
     let jmpResult = 
         computer.Memory |> Array.mapi (fun i m -> match m with 
@@ -45,5 +45,5 @@ let main argv =
             |> Array.map (fun n -> tryProgram (Some n) MemoryExceed)    
         |> Array.sum
 
-    printf "Part 2: result is %d\n" (jmpResult + nopResult)
+    printfn "Part 2: result is %d" (jmpResult + nopResult)
     0

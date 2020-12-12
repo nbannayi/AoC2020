@@ -35,6 +35,6 @@ let main argv =
         |> Seq.filter (fun i -> i = true)
         |> Seq.length
 
-    printf "Part 1: result is %d\n" (inputPasswordLines |> validPasswordCount <| validatePassword1)
-    printf "Part 2: result is %d\n" (inputPasswordLines |> validPasswordCount <| validatePassword2)
+    printfn "Part 1: result is %d" (inputPasswordLines |> validPasswordCount <| validatePassword1)
+    printfn "Part 2: result is %d" (inputPasswordLines |> validPasswordCount <| validatePassword2)
     0

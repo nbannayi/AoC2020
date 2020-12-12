@@ -28,12 +28,12 @@ let main argv =
         |> Seq.length  
         |> int64
 
-    printf "Part 1: result is %d\n" (countTrees 3 1)
+    printfn "Part 1: result is %d" (countTrees 3 1)
 
     let totalTrees = 
         [|(1,1);(3,1);(5,1);(7,1);(1,2)|] 
         |> Array.map (fun (x,y) -> countTrees x y) 
         |> Array.reduce (*) 
 
-    printf "Part 2: result is %d\n" totalTrees
+    printfn "Part 2: result is %d" totalTrees
     0
