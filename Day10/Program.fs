@@ -32,7 +32,8 @@ let main argv =
 
     let findPossibleAdapters (jolts : int64 array) : int64 =
 
-        // Split into groups of [2], [3;2], [3;3;2] etc.
+        // Recursion proved too slow so formulated this alternate approach.
+        // Split into groups of [2], [3;2], [3;3;2] etc. according to number of nodes connected.
         (jolts
         |> Array.map (fun j -> 
             [|1L;2L;3L|]
@@ -47,9 +48,9 @@ let main argv =
             |> Array.map (fun s -> if s = "" || s = "0" then 0L else s |> int64) 
             |> Array.filter (fun i -> i <> 0L))
         |> Array.filter (fun a -> a.Length > 0)   
-        // Did this part by exprimenting on paper - the counts that need to be multiplied are as below
-        // In general this looks like the sequence 2,4,7,13,24, ..., sum of last 3 numbers
-        // Only needed to go up to 3 for the input.
+        // Did this part by experimenting on paper - the counts that need to be multiplied are as below.
+        // In general this looks like the sequence 1,1,2,4,7,13,24, ..., sum of last 3 numbers (tribonacci?)
+        // Only needed to go up to 3 for the input but could generalise further...
         |> Array.map (fun a -> match a.Length with
                                | 1 -> 2L
                                | 2 -> 4L
