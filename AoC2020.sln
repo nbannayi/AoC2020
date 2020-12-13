@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		InputFiles\Day11ExampleInput.txt = InputFiles\Day11ExampleInput.txt
 		InputFiles\Day12Input.txt = InputFiles\Day12Input.txt
 		InputFiles\Day12ExampleInput.txt = InputFiles\Day12ExampleInput.txt
+		InputFiles\Day13Input.txt = InputFiles\Day13Input.txt
+		InputFiles\Day13ExampleInput.txt = InputFiles\Day13ExampleInput.txt
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day10", "Day10\Day10.fsproj", "{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}"
@@ -51,6 +53,8 @@ EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day11", "Day11\Day11.fsproj", "{D44A512C-F650-4801-BFA6-3ED949EAF332}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day12", "Day12\Day12.fsproj", "{F34CCBD6-606A-4749-8D1C-C8B2182DE850}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day13", "Day13\Day13.fsproj", "{68277E86-7879-4C9D-AFDC-CF7D9FABE47B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +114,10 @@ Global
 		{F34CCBD6-606A-4749-8D1C-C8B2182DE850}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{F34CCBD6-606A-4749-8D1C-C8B2182DE850}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{F34CCBD6-606A-4749-8D1C-C8B2182DE850}.Release|anycpu.Build.0 = Release|Any CPU
+		{68277E86-7879-4C9D-AFDC-CF7D9FABE47B}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{68277E86-7879-4C9D-AFDC-CF7D9FABE47B}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{68277E86-7879-4C9D-AFDC-CF7D9FABE47B}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{68277E86-7879-4C9D-AFDC-CF7D9FABE47B}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5744139-11A0-4545-863A-377487B42B9B} = {82F63EF4-7695-41EE-998A-F7C55FA204B0}

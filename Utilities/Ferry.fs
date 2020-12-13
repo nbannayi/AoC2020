@@ -1,6 +1,6 @@
 ﻿namespace AoC2020.Common.Utilities
 
-// Ferry class for AoC 2020 day 11.
+// Ferry module for AoC 2020 day 11.
 
 open System
 
