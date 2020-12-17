@@ -6,9 +6,10 @@
 
   <ItemGroup>
     <Compile Include="Seq.fs" />
-    <Compile Include="Computer.fs" />
+    <Compile Include="GameBoyComputer.fs" />
     <Compile Include="Ferry.fs" />
     <Compile Include="Maths.fs" />
+    <Compile Include="FerryComputer.fs" />
   </ItemGroup>
 
 </Project>

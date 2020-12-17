@@ -16,3 +16,9 @@ module Seq =
         let fullPath = Path.Combine(baseDirectory.FullName, filePath)
         let text = File.ReadAllText fullPath
         text.Split(delimiter) |> Seq.ofArray
+
+    /// Concatenate a sequence of char and return as a string.
+    let charSeqToString (charSeq : char seq) : string =
+        charSeq
+        |> Seq.map (string)
+        |> Seq.reduce (+)

@@ -1,11 +1,11 @@
-﻿open AoC2020.Common.Utilities.Computer
+﻿open AoC2020.Common.Utilities.GameBoyComputer
 
 // Advent of Code 2020 day 8.
 
 [<EntryPoint>]
 let main argv =
 
-    let computer = Computer(program = "InputFiles/Day08Input.txt")
+    let computer = GameBoyComputer(program = "InputFiles/Day08Input.txt")
     
     let rec runProgram mode =
         seq {                        

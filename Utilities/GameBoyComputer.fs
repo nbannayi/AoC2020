@@ -2,7 +2,7 @@
 
 // Computer class for AoC 2020 day 8.
 
-module Computer = 
+module GameBoyComputer = 
 
     /// Represents a CPU instruction.
     type Instruction =
@@ -17,7 +17,7 @@ module Computer =
         | Success
             
     /// Create a AoC Day 8 computer.
-    type Computer(program : string) =
+    type GameBoyComputer(program : string) =
 
         let parseInstruction (programLine : string) =
             let opcode = programLine.Split(' ').[0]
