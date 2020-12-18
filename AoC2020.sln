@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		InputFiles\Day13ExampleInput.txt = InputFiles\Day13ExampleInput.txt
 		InputFiles\Day14Input.txt = InputFiles\Day14Input.txt
 		InputFiles\Day14ExampleInput.txt = InputFiles\Day14ExampleInput.txt
+		InputFiles\Day16ExampleInput.txt = InputFiles\Day16ExampleInput.txt
+		InputFiles\Day16Input.txt = InputFiles\Day16Input.txt
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day10", "Day10\Day10.fsproj", "{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}"
@@ -59,6 +61,10 @@ EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day13", "Day13\Day13.fsproj", "{68277E86-7879-4C9D-AFDC-CF7D9FABE47B}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day14", "Day14\Day14.fsproj", "{4EDF3B23-F248-4DE6-93B1-079ACE6E7006}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day15", "Day15\Day15.fsproj", "{77113FB1-83E5-4E64-AABF-8C9E79D81DB3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day16", "Day16\Day16.fsproj", "{B8FE7AED-0FEA-4FA0-9370-BA3E0AB2399B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -126,6 +132,14 @@ Global
 		{4EDF3B23-F248-4DE6-93B1-079ACE6E7006}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{4EDF3B23-F248-4DE6-93B1-079ACE6E7006}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{4EDF3B23-F248-4DE6-93B1-079ACE6E7006}.Release|anycpu.Build.0 = Release|Any CPU
+		{77113FB1-83E5-4E64-AABF-8C9E79D81DB3}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{77113FB1-83E5-4E64-AABF-8C9E79D81DB3}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{77113FB1-83E5-4E64-AABF-8C9E79D81DB3}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{77113FB1-83E5-4E64-AABF-8C9E79D81DB3}.Release|anycpu.Build.0 = Release|Any CPU
+		{B8FE7AED-0FEA-4FA0-9370-BA3E0AB2399B}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{B8FE7AED-0FEA-4FA0-9370-BA3E0AB2399B}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{B8FE7AED-0FEA-4FA0-9370-BA3E0AB2399B}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{B8FE7AED-0FEA-4FA0-9370-BA3E0AB2399B}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5744139-11A0-4545-863A-377487B42B9B} = {82F63EF4-7695-41EE-998A-F7C55FA204B0}
