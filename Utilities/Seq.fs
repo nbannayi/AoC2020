@@ -22,3 +22,8 @@ module Seq =
         charSeq
         |> Seq.map (string)
         |> Seq.reduce (+)
+
+    /// Concatenate a sequence of string and return as a string.
+    let stringSeqToString (strSeq : string seq) : string =
+        strSeq        
+        |> Seq.reduce (+)

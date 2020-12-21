@@ -93,6 +93,7 @@ module PocketDimension =
             grid
             |> List.filter (fun c -> c.State = Active)
 
+        /// Get box enclosing all active cubes for the next cycle.
         member this.getBox =
 
             let getRange axis =

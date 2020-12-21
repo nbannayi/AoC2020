@@ -11,5 +11,7 @@
     <Compile Include="Ferry.fs" />
     <Compile Include="Timer.fs" />
     <Compile Include="PocketDimension.fs" />
+    <Compile Include="Stack.fs" />
+    <Compile Include="Char.fs" />
   </ItemGroup>
 </Project>

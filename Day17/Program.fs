@@ -4,7 +4,7 @@
 
 [<EntryPoint>]
 let main argv =
-
+    
     let rec getCycle (pd : PocketDimension) (n : int) : PocketDimension =        
         if pd.Cycle < n then getCycle pd.generateCycle n else pd         
 
