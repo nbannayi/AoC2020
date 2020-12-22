@@ -2,7 +2,7 @@
 open AoC2020.Common.Utilities.Stack
 open System
 
-// Advent of Code 2020 day 18 (15:30 start.)
+// Advent of Code 2020 day 18.
 
 type Element =    
     | Operator of char
