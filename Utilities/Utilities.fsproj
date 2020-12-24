@@ -10,8 +10,10 @@
     <Compile Include="FerryComputer.fs" />
     <Compile Include="Ferry.fs" />
     <Compile Include="Timer.fs" />
-    <Compile Include="PocketDimension.fs" />
     <Compile Include="Stack.fs" />
     <Compile Include="Char.fs" />
+    <Compile Include="PocketDimension.fs" />
+    <Compile Include="ImageTile.fs" />
+    <Compile Include="ImageJigsaw.fs" />
   </ItemGroup>
 </Project>
