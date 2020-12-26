@@ -40,10 +40,12 @@ module ImageTile =
                     |> Array.map (seq >> Seq.charSeqToString)
             }
 
+        /// Convert image to a char array.
         member __.getImageCharArray() =
             __.ImageGrid
             |> Array.map (String.toCharSeq >> Seq.toArray)
 
+        /// Get areas of sea other than where nessie is.
         member __.roughness() =
             __.ImageGrid
             |> Array.map (fun g -> g |> String.toCharSeq |> Seq.filter(fun g' -> g' = '#') |> Seq.length)

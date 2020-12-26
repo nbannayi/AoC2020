@@ -31,7 +31,7 @@ module ImageJigsaw =
         }
         with 
 
-        /// Instatiate an Image Jigsaw type.
+        /// Instantiate an Image Jigsaw type.
         static member create width height tiles =
             { 
                 BoardWidth = width
@@ -92,7 +92,7 @@ module ImageJigsaw =
         |> Array.map (fun (o,(_,_)) -> o)
         |> Array.head
 
-    /// Given a tile and an edge, return the corerctly orientated tile that fits on that edge.
+    /// Given a tile and an edge, return the correctly orientated tile that fits on that edge.
     let findTile (tile : ImageTile) (edge : EdgeType) (jigsaw : ImageJigsaw) =
 
         let otherTiles = jigsaw.ImageTiles |> Array.filter (fun t -> t.TileId <> tile.TileId)
@@ -152,7 +152,7 @@ module ImageJigsaw =
                         image'.[rowOffset+row'].[colOffset+col'] <- tile.ImageGrid.[row'].[col']
         image'             
 
-    /// Display the image off all pieced together tiles.
+    /// Display the image of all pieced together tiles.
     let displayImage (jigsaw : ImageJigsaw) =
         let image = jigsaw |> image
 
