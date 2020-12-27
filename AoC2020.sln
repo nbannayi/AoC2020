@@ -44,6 +44,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		InputFiles\Day20ExampleInput2.txt = InputFiles\Day20ExampleInput2.txt
 		InputFiles\Day21Input.txt = InputFiles\Day21Input.txt
 		InputFiles\Day21ExampleInput.txt = InputFiles\Day21ExampleInput.txt
+		InputFiles\Day22Input.txt = InputFiles\Day22Input.txt
+		InputFiles\Day22ExampleInput.txt = InputFiles\Day22ExampleInput.txt
+		InputFiles\Day22ExampleInput2.txt = InputFiles\Day22ExampleInput2.txt
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day10", "Day10\Day10.fsproj", "{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}"
@@ -87,6 +90,8 @@ EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day20", "Day20\Day20.fsproj", "{D295E45E-9FC8-4135-B2B2-0E0D335E0FB0}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day21", "Day21\Day21.fsproj", "{32BF922B-AACA-4B29-95B0-460C2147E178}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day22", "Day22\Day22.fsproj", "{1C6FF1FA-068E-4BFC-9D5A-7DF96A54C11D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -182,6 +187,10 @@ Global
 		{32BF922B-AACA-4B29-95B0-460C2147E178}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{32BF922B-AACA-4B29-95B0-460C2147E178}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{32BF922B-AACA-4B29-95B0-460C2147E178}.Release|anycpu.Build.0 = Release|Any CPU
+		{1C6FF1FA-068E-4BFC-9D5A-7DF96A54C11D}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{1C6FF1FA-068E-4BFC-9D5A-7DF96A54C11D}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{1C6FF1FA-068E-4BFC-9D5A-7DF96A54C11D}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{1C6FF1FA-068E-4BFC-9D5A-7DF96A54C11D}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5744139-11A0-4545-863A-377487B42B9B} = {82F63EF4-7695-41EE-998A-F7C55FA204B0}
