@@ -50,7 +50,7 @@ let main argv =
             |> Set.add (cards |> List.map scoreCards)
 
         if previousCards'.Count = previousCards.Count then
-            1, 2
+            1, 1 // Second value ignored.
         else
             let p1Cards = cards.[0]
             let p2Cards = cards.[1]            
@@ -73,8 +73,6 @@ let main argv =
             | _, _ ->
                 0, 0
 
-    let winner2 =
-        playCombatRecursive Set.empty [p1Cards |> List.ofArray; p2Cards |> List.ofArray]        
-
+    let winner2 = playCombatRecursive Set.empty [p1Cards |> List.ofArray; p2Cards |> List.ofArray]
     printfn "Part 2: result is %A" (winner2 |> snd)  
     0
