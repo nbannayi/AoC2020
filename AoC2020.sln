@@ -50,6 +50,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		InputFiles\Day24Input.txt = InputFiles\Day24Input.txt
 		InputFiles\Day24ExampleInput2.txt = InputFiles\Day24ExampleInput2.txt
 		InputFiles\Day24ExampleInput.txt = InputFiles\Day24ExampleInput.txt
+		InputFiles\Day25Input.txt = InputFiles\Day25Input.txt
+		InputFiles\Day25ExampleInput.txt = InputFiles\Day25ExampleInput.txt
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day10", "Day10\Day10.fsproj", "{BD36450D-42A0-4BA0-9149-CFD44D4E02C8}"
@@ -99,6 +101,8 @@ EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day23", "Day23\Day23.fsproj", "{888C398E-8945-428E-AAAE-9A9631234F38}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day24", "Day24\Day24.fsproj", "{8278E5D1-92BF-4AEF-B918-5404395F97B9}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day25", "Day25\Day25.fsproj", "{FA2D3EF1-6977-4344-8844-C10A32926B85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -206,6 +210,10 @@ Global
 		{8278E5D1-92BF-4AEF-B918-5404395F97B9}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{8278E5D1-92BF-4AEF-B918-5404395F97B9}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{8278E5D1-92BF-4AEF-B918-5404395F97B9}.Release|anycpu.Build.0 = Release|Any CPU
+		{FA2D3EF1-6977-4344-8844-C10A32926B85}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{FA2D3EF1-6977-4344-8844-C10A32926B85}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{FA2D3EF1-6977-4344-8844-C10A32926B85}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{FA2D3EF1-6977-4344-8844-C10A32926B85}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5744139-11A0-4545-863A-377487B42B9B} = {82F63EF4-7695-41EE-998A-F7C55FA204B0}

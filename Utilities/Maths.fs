@@ -49,3 +49,22 @@ module Maths =
         |> Seq.mapi (fun i b -> (string >> float) b * 2. ** float i)
         |> Seq.sum
         |> int64
+
+    /// Calculate the result of a^b (mod c).
+    let rec modularExp (a : int64) (b : int64) (c : int64) =
+
+        let mutable (m : int64) = 0L
+
+        if a = 0L then
+            m <- 0L
+        elif b = 0L then
+            m <- 1L
+        elif b % 2L = 0L then                
+            m <- modularExp a (b/2L) c  
+            m <- (m * m) % c        
+        else
+            m <- a % c  
+            m <- (m * (modularExp a (b-1L) c) % c) % c
+      
+        (m + c) % c 
+    
