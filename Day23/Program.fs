@@ -62,6 +62,7 @@ let main argv =
         let mutable found = true
         let mutable destinationCup = currentCup
 
+        // TODO: refactor at some point to make immutable.
         while found do
             destinationCup <- destinationCup - 1
             destinationCup <- if destinationCup = 0 then cups |> List.max else destinationCup
@@ -69,6 +70,8 @@ let main argv =
 
         destinationCup
 
+    // TODO: performance is fairly good but refactor at some point to try to make
+    // solution immutable.
     let playCups2 cups moves =
 
         // Create circular linked list.
@@ -79,7 +82,6 @@ let main argv =
         // Get current cup at head of list.
         let mutable currentCup = cups |> List.head
 
-        // Iterate number of mopves.
         for _ in [0..moves-1] do
 
             // Get next three cups.
@@ -88,7 +90,7 @@ let main argv =
                 let lastCup = next3Cups |> List.last
                 next3Cups <- next3Cups @ [cupPointers.[lastCup]]
 
-            // Point to the cup after the last of the next three icked cups.
+            // Point to the cup after the last of the next three picked cups.
             cupPointers.[currentCup] <- cupPointers.[List.last next3Cups]
 
             // Get destination cup

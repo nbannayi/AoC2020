@@ -155,7 +155,7 @@ module PocketDimension =
             //this.display // Uncomment to display output at each cycle.                                                        
             this
 
-        /// Get memory of the computer.
+        /// Get cycle number.
         member this.Cycle
             with get() = cycle
             

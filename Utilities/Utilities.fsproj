@@ -15,5 +15,7 @@
     <Compile Include="PocketDimension.fs" />
     <Compile Include="ImageTile.fs" />
     <Compile Include="ImageJigsaw.fs" />
+    <Compile Include="HexTile.fs" />
+    <Compile Include="HexFloor.fs" />
   </ItemGroup>
 </Project>
